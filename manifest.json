@@ -1,0 +1,22 @@
+{
+  "short_name": "Millie Bobby Brown",
+  "name": "Millie Bobby Brown",
+  "icons": [
+    {
+      "src": "https://cdn.discordapp.com/attachments/772882333471735810/820753941347303484/mbb.png?size=2048",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://cdn.discordapp.com/attachments/772882333471735810/820753941347303484/mbb.png?size=2048",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#b5b5e7",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#b5b5e7",
+  "description": "Millie Bobby Brown is a British actress and producer. At the age of twelve, he gained credit for his role as Eleven in the Netflix science fiction series Stranger Things. In 2016, she received a Primetime Emmy Award nomination for Best Supporting Actress in a Drama Series."
+}
