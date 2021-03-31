@@ -1,15 +1,11 @@
-import express from 'express';
-const app = express();
-app.set('view engine', 'html');
-app.use(express.static(__dirname + '/pages'));
+var app = require('express').createServer();
 
+app.get('/', function(req, res){
+  res.render('index.html');
+});
 
-app.get('/', (req,res) =>{
-	res.render('index')
-})
-app.get('/*', (req,res) =>{
-	res.render('404')
-})
-const port = process.env.PORT || 5656;
-app.listen(port, () => {
-})
+app.get('/*', function(req, res){
+  res.render('404.html');
+});
+
+app.listen(1243);
