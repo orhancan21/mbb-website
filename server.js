@@ -1,15 +1,15 @@
-const http = require('http');
-const express = require('express');
-const path = require('path');
+import express from 'express';
 const app = express();
-app.use(express.json());
-app.use(express.static("express"));
-app.use('/', function(req,res){
-    res.sendFile(path.join(__dirname+'/pages/index.html'));
-  });
-app.use('/*', function(req,res){
-    res.sendFile(path.join(__dirname+'/pages/404.html'));
-  });
-const server = http.createServer(app);
-const port = 3000;
-server.listen(port);
+app.set('view engine', 'html');
+app.use(express.static(__dirname + '/pages'));
+
+
+app.get('/', (req,res) =>{
+	res.render('index')
+})
+app.get('/*', (req,res) =>{
+	res.render('404')
+})
+const port = process.env.PORT || 5656;
+app.listen(port, () => {
+})
