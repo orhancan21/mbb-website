@@ -5,7 +5,7 @@ app.get('/mts', function(req, res){
 });
 
 app.get('/*', function(req, res){
-  res.render('404.html');
+  res.render('pages/404.html');
 });
 
 app.listen(1243);
