@@ -1,4 +1,8 @@
-var app = require('express').createServer();
+var app = require('express')//.createServer();
+
+app.get('/', function(req, res){
+  res.render('pages/404.html');
+});
 
 app.get('/*', function(req, res){
   res.render('404.html');
