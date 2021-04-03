@@ -1,11 +1,7 @@
 var app = require('express')//.createServer();
 
-app.get('/', function(req, res){
-  res.render('/pages/index.html');
-});
-
 app.get('/*', function(req, res){
-  res.render('/pages/404.html');
+  res.render('/oPages/404.html');
 });
 
 app.listen(1243);
